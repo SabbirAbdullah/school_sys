@@ -16,12 +16,12 @@ class PrivacyPolicyPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Privacy Policy for Al Hasanain – Students & Parents',
+                'Privacy Policy for School – Students & Parents',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 10),
               Text(
-                'Welcome to Al Hasanain – Students & Parents. Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (“App”). By using the App, you consent to the practices described in this policy.',
+                'Welcome to School – Students & Parents. Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (“App”). By using the App, you consent to the practices described in this policy.',
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(height: 20),
@@ -207,8 +207,8 @@ class PrivacyPolicyPage extends StatelessWidget {
               ),
               SizedBox(height: 8),
               Text(
-                'Al Hasanain has authorized mPair Technologies to develop and publish the "Al Hasanain - Students & Parents" application. '
-                    'As the authorized developer and publisher, mPair Technologies is responsible for the technical aspects of the App\'s operation, including:\n\n'
+                'School has authorized Sabbir Abdullah to develop and publish the "School - Students & Parents" application. '
+                    'As the authorized developer and publisher, Sabbir Abdullah is responsible for the technical aspects of the App\'s operation, including:\n\n'
                     '• App development, maintenance, and updates.\n'
                     '• App publication and distribution on app stores (e.g., Google Play).\n'
                     '• Ensuring the App\'s technical functionality and security.\n'
@@ -224,7 +224,7 @@ class PrivacyPolicyPage extends StatelessWidget {
               Text(
                 'School Contact:\n\n'
                     'For any questions regarding this privacy policy, please contact the school administration at info@alhasanain.edu.bd or Call Us 01847422750\n\n'
-                    'By using the Al Hasanain – Students & Parents App, you consent to the terms of this privacy policy.',
+                    'By using the School – Students & Parents App, you consent to the terms of this privacy policy.',
                 style: TextStyle(fontSize: 16),
               ),
             ],
