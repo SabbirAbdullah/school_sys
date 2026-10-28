@@ -184,7 +184,8 @@ class BasicInfoWidget extends StatelessWidget {
                     children: [
                       Text(
                         "Full Name",
-                        style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 12),
                       ),
                       Text(
                         "${state.firstName} ${state.lastName}",
@@ -194,39 +195,6 @@ class BasicInfoWidget extends StatelessWidget {
                     ],
                   ),
                 ),
-
-              InfoCard(
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text(
-                      "Class",
-                      style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
-                    ),
-                    Text(state.studentClass,
-                        style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 12)),
-                  ],
-                ),
-              ),
-
-              InfoCard(
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text(
-                      "Section",
-                      style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
-                    ),
-                    Text(state.section,
-                        style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 12)),
-                  ],
-                ),
-              ),
-
                 InfoCard(
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -234,7 +202,8 @@ class BasicInfoWidget extends StatelessWidget {
                     children: [
                       const Text(
                         "Class",
-                        style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 12),
                       ),
                       Text(state.studentClass,
                           style: TextStyle(
@@ -242,7 +211,6 @@ class BasicInfoWidget extends StatelessWidget {
                     ],
                   ),
                 ),
-
                 InfoCard(
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -250,7 +218,8 @@ class BasicInfoWidget extends StatelessWidget {
                     children: [
                       const Text(
                         "Section",
-                        style: TextStyle(fontWeight: FontWeight.w600,fontSize: 12,),
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 12),
                       ),
                       Text(state.section,
                           style: TextStyle(
@@ -258,7 +227,40 @@ class BasicInfoWidget extends StatelessWidget {
                     ],
                   ),
                 ),
-
+                InfoCard(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        "Class",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 12),
+                      ),
+                      Text(state.studentClass,
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, fontSize: 12)),
+                    ],
+                  ),
+                ),
+                InfoCard(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        "Section",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 12,
+                        ),
+                      ),
+                      Text(state.section,
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, fontSize: 12)),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
@@ -288,14 +290,15 @@ class ContactInfoWidget extends StatelessWidget {
           children: const [
             InfoCard(
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   "Phone",
                   style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
                 ),
                 Text(phone,
-                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12)),
+                    style:
+                        TextStyle(fontWeight: FontWeight.w600, fontSize: 12)),
               ],
             )),
             InfoCard(
@@ -307,7 +310,8 @@ class ContactInfoWidget extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
                 ),
                 Text(email,
-                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12)),
+                    style:
+                        TextStyle(fontWeight: FontWeight.w600, fontSize: 12)),
               ],
             )),
             SizedBox(height: 10),
@@ -325,16 +329,22 @@ class InfoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-            width: double.infinity,
-            child: Column(
-              children: [
-                SizedBox(
-                  child: child,
-                ),
-                SizedBox(height: 6,),
-                DottedLine(dashColor: AppColors.borderColor,),
-                SizedBox(height: 12,),
-              ],
-            ));
+        width: double.infinity,
+        child: Column(
+          children: [
+            SizedBox(
+              child: child,
+            ),
+            SizedBox(
+              height: 6,
+            ),
+            DottedLine(
+              dashColor: AppColors.borderColor,
+            ),
+            SizedBox(
+              height: 12,
+            ),
+          ],
+        ));
   }
 }
